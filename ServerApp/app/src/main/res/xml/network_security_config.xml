@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  DEVELOPMENT ONLY.
+
+  The embedded server accepts plain HTTP. This config permits cleartext so that
+  any in-app or debug tooling can reach it over loopback as well.
+  A production app would use HTTPS and delete this file.
+-->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true" />
+</network-security-config>

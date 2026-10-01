@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  DEVELOPMENT ONLY.
+
+  Android 9 (API 28) and above block cleartext HTTP by default. This demo talks
+  plain HTTP to a user-entered LAN IP, so cleartext must be permitted.
+
+  base-config below permits cleartext to ANY host, which is required because the
+  server's IP is typed in at runtime and therefore cannot be listed ahead of time.
+  A production app would use HTTPS and delete this file.
+-->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true" />
+</network-security-config>
